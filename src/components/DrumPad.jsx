@@ -1,15 +1,14 @@
 import React from 'react'
-import {useState} from 'react'
 
 function DrumPad(props){
 
    
-    const [cloud_path] = useState("https://s3.amazonaws.com/freecodecamp/drums/") 
+    const cloud_path = "https://s3.amazonaws.com/freecodecamp/drums/"
      
       
     const handleClick = (e) => {
       
-      if( props.is_on){
+      if( props.is_on ){
       
           let button = e.target;
 
