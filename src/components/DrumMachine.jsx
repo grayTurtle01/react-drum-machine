@@ -8,7 +8,7 @@ function DrumMachine(){
 
     const [is_on, toggle] = useState(true)
     const [volume, setVolume] = useState(50)
-    const [bank, setBank] = useState(1)
+    const [bank, setBank] = useState('1')
     
  
     const on_off = (e) => {
@@ -46,7 +46,7 @@ function DrumMachine(){
            
       
             <div id="buttons"> 
-                { bank == 1? botones: botones2}
+                { bank === '1'? botones: botones2}
             </div>
             
             <div id="controls">
