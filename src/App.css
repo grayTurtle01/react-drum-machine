@@ -3,12 +3,14 @@ body{
   }
   
   #drum-machine{
-    width: 600px;
+    width: 630px;
     margin: 0 auto;
     margin-top: 20vh;
     border: 5px solid orange;
+
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   
     background-color: #b3b3b3;
     border-radius: 10px;
@@ -57,4 +59,10 @@ body{
     text-align: center;
   
     margin-top: 10%;
+  }
+
+  @media (max-width:650px){
+    #drum-machine{
+      width: 300px;
+    }
   }
