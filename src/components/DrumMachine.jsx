@@ -2,6 +2,8 @@ import React from 'react';
 import DrumPad from './DrumPad'
 import {useState} from 'react'
 
+import {buttons} from '../helpers'
+
 function DrumMachine(){
 
     const [is_on, toggle] = useState(true)
@@ -19,11 +21,19 @@ function DrumMachine(){
             
     }
 
+    let botones = buttons.map( (boton, index) => <DrumPad key={index} 
+                                                          name={boton.letter} 
+                                                          sound={boton.sound}
+                                                          is_on={is_on}
+                                                          volume={volume}></DrumPad>)
   
     return(
         <div id="drum-machine">
-
+           
+      
             <div id="buttons"> 
+                {botones}
+
                 <DrumPad name="Q" sound="Heater-1" is_on={is_on} volume={volume}/>
                 <DrumPad name="W" sound="Heater-2"  is_on={is_on} volume={volume}/>
                 <DrumPad name="E" sound="Heater-3" is_on={is_on} volume={volume}/>
