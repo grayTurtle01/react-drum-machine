@@ -22,11 +22,12 @@ function DrumMachine(){
             
     }
 
-    const foo = (e) => {
-        let selector = e.target
-        let bank_number = selector.value
+    const selectBank = (e) => {
+        let radio = e.target
+        let bank_number = radio.value
         setBank(bank_number)
     }
+    
 
     let botones = keys.map( (boton, index) => <DrumPad  key={index} 
                                                         name={boton.letter} 
@@ -68,10 +69,13 @@ function DrumMachine(){
                 </div>
                 
                 Select Bank:
-                <select onChange={foo}>
-                    <option>1</option>
-                    <option>2</option>
-                </select>
+                <div>
+                    Bank 1:
+                    <input type="radio" name="bank" value="1"  onChange={selectBank} defaultChecked={true}/>
+
+                    Bank 2:
+                    <input type="radio" name="bank" value="2"  onChange={selectBank}/>
+                </div>    
 
 
             </div>
