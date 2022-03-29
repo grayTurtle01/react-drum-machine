@@ -2,7 +2,7 @@ import React from 'react';
 import DrumPad from './DrumPad'
 import {useState} from 'react'
 
-import {buttons} from '../helpers'
+import {keys} from '../helpers'
 
 function DrumMachine(){
 
@@ -21,30 +21,18 @@ function DrumMachine(){
             
     }
 
-    let botones = buttons.map( (boton, index) => <DrumPad key={index} 
-                                                          name={boton.letter} 
-                                                          sound={boton.sound}
-                                                          is_on={is_on}
-                                                          volume={volume}></DrumPad>)
-  
+    let botones = keys.map( (boton, index) => <DrumPad  key={index} 
+                                                        name={boton.letter} 
+                                                        sound={boton.sound}
+                                                        is_on={is_on}
+                                                        volume={volume}></DrumPad>)
+
     return(
         <div id="drum-machine">
            
       
             <div id="buttons"> 
                 {botones}
-
-                <DrumPad name="Q" sound="Heater-1" is_on={is_on} volume={volume}/>
-                <DrumPad name="W" sound="Heater-2"  is_on={is_on} volume={volume}/>
-                <DrumPad name="E" sound="Heater-3" is_on={is_on} volume={volume}/>
-
-                <DrumPad name="A" sound="Heater-4_1" is_on={is_on} volume={volume}/>
-                <DrumPad name="S" sound="Heater-6" is_on={is_on} volume={volume}/>
-                <DrumPad name="D" sound="Dsc_Oh" is_on={is_on} volume={volume}/>
-
-                <DrumPad name="Z" sound="Kick_n_Hat" is_on={is_on} volume={volume}/>
-                <DrumPad name="X" sound="RP4_KICK_1" is_on={is_on} volume={volume}/>
-                <DrumPad name="C" sound="Cev_H2" is_on={is_on} volume={volume}/>
             </div>
             
             <div id="controls">
