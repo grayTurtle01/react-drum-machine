@@ -4,7 +4,7 @@ function DrumPad(props){
 
    
     const cloud_path = "https://s3.amazonaws.com/freecodecamp/drums/"
-     
+                       
       
     const handleClick = (e) => {
       

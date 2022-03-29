@@ -1,5 +1,6 @@
 
 // keyboards keys
+
 let keys = [
     {
         letter: 'Q',
@@ -47,4 +48,63 @@ let keys = [
     },
 ]
 
-export { keys };
+
+let keys2 = [
+    {
+        letter: 'Q',
+        name: 'Chord-1',
+        sound: 'Chord_1'
+    },
+
+    {
+        letter: 'W',
+        name: 'Chord-2',
+        sound: 'Chord_2'
+    },
+
+    {
+        letter: 'E',
+        name: 'Chord-3',
+        sound: 'Chord_3'
+    },
+
+    {
+        letter: 'A',
+        name: 'Shaker',
+        sound: 'Give_us_a_light'
+    },
+
+    {
+        letter: 'S',
+        sound: 'Dry_Ohh',
+        name: 'Open_HH',
+
+    },
+
+    {
+        letter: 'D',
+        name: 'Closed-HH',
+        sound: 'Bld_H1'
+    },
+
+    {
+        letter: 'Z',
+        name: 'Punchy-Kick',
+        sound: 'punchy_kick_1'
+    },
+
+    {
+        letter: 'X',
+        name: 'Side-Stick',
+        sound: 'side_stick_1'
+    },
+
+    {
+        letter: 'C',
+        name: 'Snare',
+        sound: 'Brk_Snr'
+    },
+]
+
+
+export { keys, keys2 };
