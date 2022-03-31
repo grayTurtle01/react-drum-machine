@@ -3,6 +3,7 @@ import React from 'react'
 import './App.css'
 import './Animations.css'
 import './Switch.css'
+
 import DrumMachine from './components/DrumMachine'
 
 

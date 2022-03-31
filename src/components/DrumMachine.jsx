@@ -1,8 +1,10 @@
 import React from 'react';
 import DrumPad from './DrumPad'
-import {useState} from 'react'
+import {useState, createContext} from 'react'
 
 import {keys, keys2} from '../helpers'
+
+export let Contexto = createContext()
 
 function DrumMachine(){
 
@@ -32,23 +34,26 @@ function DrumMachine(){
     let botones = keys.map( (boton, index) => <DrumPad  key={index} 
                                                         name={boton.letter} 
                                                         sound={boton.sound}
-                                                        is_on={is_on}
-                                                        volume={volume}></DrumPad>)
+                                                ></DrumPad>)
 
     let botones2 = keys2.map( (boton, index) => <DrumPad  key={index} 
-                                                        name={boton.letter} 
-                                                        sound={boton.sound}
-                                                        is_on={is_on}
-                                                        volume={volume}></DrumPad>)
+                                                          name={boton.letter} 
+                                                          sound={boton.sound}
+                                                ></DrumPad>)
 
+    let state = {
+        is_on: is_on,
+        volume: volume
+    }
 
     return(
         <div id="drum-machine">
            
-      
-            <div id="buttons"> 
-                { bank === '1'? botones: botones2}
-            </div>
+            <Contexto.Provider value={state}>
+                <div id="buttons"> 
+                    { bank === '1'? botones: botones2}
+                </div>
+            </Contexto.Provider>
             
             <div id="controls">
                 <div>

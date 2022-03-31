@@ -1,20 +1,22 @@
-import React from 'react'
+import React, {useContext} from 'react'
+
+import {Contexto} from './DrumMachine'
 
 function DrumPad(props){
-
+    let state = useContext(Contexto)
    
     const cloud_path = "https://s3.amazonaws.com/freecodecamp/drums/"
                        
       
     const handleClick = (e) => {
       
-      if( props.is_on ){
+      if( state.is_on ){
       
           let button = e.target;
 
           // play audio
           let audio = button.querySelector('audio')
-          audio.volume = props.volume/100
+          audio.volume = state.volume/100
           audio.play()
 
           // show message    
