@@ -38,7 +38,8 @@ function handleKeyDown(event){
       audio.play()
       
       let display = document.querySelector('#display')
-      display.innerText = letter
+      let soundName = audio.getAttribute('soundName')
+      display.innerText = soundName
 
       // Animation
       let button = document.querySelector(`#${letter}-button`)

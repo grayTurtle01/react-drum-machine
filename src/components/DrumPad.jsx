@@ -44,7 +44,7 @@ function DrumPad(props){
             <audio  id={props.letter}
                     className="clip" 
                     src={cloud_path + props.sound + '.mp3'}
-                    sound={props.sound}
+                    soundName={props.sound}
                     >
 
             </audio>
