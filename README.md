@@ -2,4 +2,4 @@
 Virtual Drum Machine react functions implementation
 
 ## Demos 🖥️
-[Azure]()
+[Azure](https://mango-ground-0d3f3d510.1.azurestaticapps.net/)
