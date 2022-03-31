@@ -32,14 +32,14 @@ function DrumMachine(){
     
 
     let botones = keys.map( (boton, index) => <DrumPad  key={index} 
-                                                        name={boton.letter} 
+                                                        letter={boton.letter} 
                                                         sound={boton.sound}
-                                                ></DrumPad>)
+                                            ></DrumPad>)
 
     let botones2 = keys2.map( (boton, index) => <DrumPad  key={index} 
-                                                          name={boton.letter} 
+                                                          letter={boton.letter} 
                                                           sound={boton.sound}
-                                                ></DrumPad>)
+                                              ></DrumPad>)
 
     let state = {
         is_on: is_on,

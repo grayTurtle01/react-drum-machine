@@ -10,6 +10,7 @@ import DrumMachine from './components/DrumMachine'
 function App(props) {
 
   // return
+
   return (
    <div>
      <DrumMachine />
@@ -20,10 +21,10 @@ function App(props) {
 
 export default App;
 
-// KeyBoard
-document.addEventListener('keydown', foo)
+// KeyBoard Listener
+document.addEventListener('keydown', handleKeyDown)
 
-function foo(event){
+function handleKeyDown(event){
   let code = event.code
   let letter = code.slice(3)
  
@@ -33,8 +34,9 @@ function foo(event){
     audio.volume = volume/100
 
     let check = document.querySelector('#on_off')
-    if( check.checked){
+    if( check.checked ){
       audio.play()
+      
       let display = document.querySelector('#display')
       display.innerText = letter
 

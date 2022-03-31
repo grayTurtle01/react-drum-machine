@@ -35,15 +35,16 @@ function DrumPad(props){
     
     return(
         <button className="drum-pad" 
-                id={props.name + '-button'}
+                id={props.letter + '-button'}
                 onClick={handleClick}
                 >
 
-            {props.name}
+            {props.letter}
 
-            <audio id={props.name}
+            <audio  id={props.letter}
                     className="clip" 
                     src={cloud_path + props.sound + '.mp3'}
+                    sound={props.sound}
                     >
 
             </audio>
