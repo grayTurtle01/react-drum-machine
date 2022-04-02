@@ -5,4 +5,4 @@ Virtual Drum Machine react functions implementation
 ![](screenshots/screenshot.png)
 
 ## Demos 🖥️
-[Azure](https://mango-ground-0d3f3d510.1.azurestaticapps.net/)
+[Deploy](https://virtual-drum-machine.netlify.app/)
