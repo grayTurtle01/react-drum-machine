@@ -1,5 +1,5 @@
 ## Description 📖
-Virtual Drum Machine react functions implementation
+Virtual Drum Machine implemented with react-functions-components 
 
 ## ScreenShot 📸
 ![](screenshots/screenshot.png)
