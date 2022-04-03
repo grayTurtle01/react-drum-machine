@@ -5,4 +5,4 @@ Virtual Drum Machine implemented with react-functions-components
 ![](screenshots/screenshot.png)
 
 ## Demos 🖥️
-[Deploy](https://virtual-drum-machine.netlify.app/)
+[Deploy](https://virtual-drum-machine.netlify.app) 🚀
